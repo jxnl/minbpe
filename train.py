@@ -23,3 +23,5 @@ for TokenizerClass, name in zip([BasicTokenizer, RegexTokenizer], ["basic", "reg
     tokenizer.save(prefix)
     t1 = time.time()
     print(f"Training {name} took {t1-t0:.2f} seconds")
+    # > Training basic took 4.19 seconds
+    # > Training regex took 7.46 seconds
