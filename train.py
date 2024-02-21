@@ -17,7 +17,7 @@ for TokenizerClass, name in zip([BasicTokenizer, RegexTokenizer], ["basic", "reg
     # construct the Tokenizer object and kick off verbose training
     t0 = time.time()
     tokenizer = TokenizerClass()
-    tokenizer.train(text, 512, verbose=True)
+    tokenizer.train(text, 512, verbose=False)
     # writes two files in the models directory: name.model, and name.vocab
     prefix = os.path.join("models", name)
     tokenizer.save(prefix)
